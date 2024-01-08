@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copia o arquivo csproj e restaura dependências
-COPY /*.csproj ApiAgenciaDeViagem/
+COPY *.csproj ApiAgenciaDeViagem/
 RUN dotnet restore "ApiAgenciaDeViagem/ApiAgenciaDeViagem.csproj"
 
 # Copia todos os arquivos e constrói a aplicação
