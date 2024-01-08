@@ -4,7 +4,7 @@ WORKDIR /src
 
 # Copia a solução e restaura dependências
 COPY AgenciaDeViagem.sln .
-COPY AgenciaDeViagem/AgenciaDeViagem.csproj AgenciaDeViagem/
+COPY /AgenciaDeViagem.csproj AgenciaDeViagem/
 RUN dotnet restore
 
 # Copia todos os arquivos e constrói a aplicação
